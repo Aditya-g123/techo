@@ -11,6 +11,8 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "lucide-react": "^0.511.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.1",
     "next": "15.3.2",
     "radix-ui": "^1.4.2",
     "react": "^19.0.0",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/mongodb": "^4.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

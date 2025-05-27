@@ -41,9 +41,22 @@ export function ContactSection() {
     }
   }, [])
 
+  
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+
+    const res = await fetch("/api/submit-form", {
+      method: "POST",
+      body: JSON.stringify({name: name, phone: phone, email: email, message: message, course: course}),
+    });
+
+    if (res.ok) {
+      setMessage("Form submitted successfully!");
+    } else {
+      setMessage("Submission failed.");
+    }
 
     // Simulate API call
     setTimeout(() => {
