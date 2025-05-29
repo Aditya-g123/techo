@@ -53,9 +53,9 @@ export function ContactSection() {
     });
 
     if (res.ok) {
-      setMessage("Form submitted successfully!");
+      console.log("Form submitted successfully!");
     } else {
-      setMessage("Submission failed.");
+      console.error("Submission failed.");
     }
 
     // Simulate API call
